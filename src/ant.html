@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>蚁群算法</title>
+    <script src="Scripts/jquery-2.1.1.js"></script>
+    <script src="ant.js"></script>
+    <style>
+        table {
+            border-collapse: collapse;
+            border: none;
+        }
+        td {
+            border: solid #000 1px;
+            width: 15px;
+            height: 15px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <h2>蚁群算法</h2>
+    <div id="setting">
+        <p>
+            <label>表格行数：</label>
+            <input id="tableRow" value="30" />
+        </p>
+        <p>
+            <label>表格列数：</label>
+            <input id="tableCol" value="30" />
+        </p>
+        <p>
+            <button id="createTable">生成表格</button>
+        </p>
+        <p>
+            <label>蚂蚁速度：</label>
+            <input id="antSpeed" value="5" />
+        </p>
+        <p>
+            <label>蚂蚁总数：</label>
+            <input id="antNum" value="10" />
+        </p>
+        <p>
+            <label>点击设置：</label>
+            <select id="select">
+                <option value="1" selected="selected">障碍物</option>
+                <option value="2">蚂蚁洞位置</option>
+                <option value="3">食物位置</option>
+
+            </select>
+        </p>
+        <p>
+            <button id="begin">开始运行</button>
+        </p>
+    </div>
+    <div id="showMsg" style="display:none">
+        <p>
+            <label>表格大小：</label>
+            <label id="tableSize"></label>
+        </p>
+        <p>
+            <label>蚂蚁总数：</label>
+            <label id="antNumMsg"></label>
+        </p>
+        <p>
+            <label>蚂蚁速度：</label>
+            <label id="antSpeedMsg"></label>
+        </p>
+        <p>
+            <label>目前蚂蚁找到食物用的最短路径长度为：</label>
+            <label style="color:red" id="pathsMsg"></label>
+        </p>
+    </div>
+
+</body>
+
+</html>

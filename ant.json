@@ -1,0 +1,26 @@
+{
+  "name": "ant",
+  "title": "ant",
+  "description": "演示蚁群效应",
+  "version": "1.0.0",
+  "homepage": "https://github.com/taliu/ant",
+  "author": {
+    "name": "taliu",
+    "email": "taliu@outlook.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/taliu/ant.git"
+  },
+  "bugs": "https://github.com/taliu/ant",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/taliu/ant/blob/master/LICENSE-MIT"
+    }
+  ],
+  "dependencies": {
+    "jquery": "*"
+  },
+  "keywords": []
+}
